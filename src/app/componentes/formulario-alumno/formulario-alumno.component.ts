@@ -39,7 +39,6 @@ public guardarElemento(){
     }
   }
 
-
   public cRut(evento: Event): void {
     const ele = evento.target as HTMLInputElement;
     this.alumno.rut = ele.value;

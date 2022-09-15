@@ -20,21 +20,18 @@ export class AppComponent {
     {
       rut: '98234141-2',
       nombre: 'GOKUSSJ',
-      apellido: 'si',
-      edad: 999999,
+      apellido: 'Kakaroto',
+      edad: 100,
       seccion: 'CSY4111',
     },
     {
       rut: '98234141-2',
       nombre: 'Diego',
-      apellido: 'si',
+      apellido: 'ogeid',
       edad: 20,
       seccion: 'CSY4111',
     },
   ]
-
-
-
   public escucharAlumno(nuevoA: Alumno): void {
     this.listaAlumno.push(nuevoA);
   }
