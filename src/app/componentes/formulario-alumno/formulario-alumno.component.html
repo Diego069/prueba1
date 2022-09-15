@@ -1,0 +1,32 @@
+<section>
+  <fieldset>
+      <label >ingrese el rut del alumno</label>
+      <input type="text" maxlength="11"  [value]="alumno.rut" (input)="cRut($event)">
+  </fieldset>
+  <fieldset>
+      <label >ingrese nombre del alumno</label>
+      <input type="text" [value]="alumno.nombre" (input)="cNombre($event)">
+  </fieldset>
+  <fieldset>
+    <label >ingrese apellido del alumno</label>
+    <input type="text" [value]="alumno.apellido" (input)="cApellido($event)">
+</fieldset>
+  <fieldset>
+      <label >Seleccione la edad del alumno</label>
+      <input type="number" [value]="alumno.edad" (input)="cEdad($event)">
+  </fieldset>
+  <fieldset>
+    <label >Seleccione la seccion del alumno</label>
+    <select [value]="alumno.seccion" (change)="cSeccion($event)">
+        <option
+            *ngFor="let variable of s"
+            [value]="variable"
+        >
+            {{variable}}
+        </option>
+    </select>
+</fieldset>
+  <fieldset>
+      <button type="button" (click)="guardarElemento()">Guardar datos del alumno</button>
+  </fieldset>
+</section>
